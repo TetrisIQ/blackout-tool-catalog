@@ -2,7 +2,7 @@
 
 Package manifests and profiles for [`kit`](../kit). Add it with:
 
-    kit catalog add main https://github.com/TetrisIQ/blackout-tool-catalog/releases/latest/download/catalog.tar.gz
+    kit catalog add main https://github.com/TetrisIQ/blackout-tool-catalog
 
 ## Layout
 - `<category>/<id>.yaml`: one manifest per package, file name = id, unknown keys rejected.
@@ -14,4 +14,4 @@ Package manifests and profiles for [`kit`](../kit). Add it with:
 - Kiwix content has no hardcoded size, URL or checksum (read live from the Kiwix catalog).
 - Any other download is `https://` with `sha256` and `size_bytes`.
 
-Validate with `kit catalog check .`. A release tag publishes `catalog.tar.gz` and `catalog.tar.gz.sha256`.
+Validate with `kit catalog check .`. A release tag publishes `catalog.tar.gz` and `catalog.tar.gz.sha256`; `kit` finds the latest release by itself and verifies the checksum.

@@ -1,6 +1,6 @@
 id: test
 name: Test
-description: Every service with a minimal amount of content, two small games, for trying the kit end to end. About 2 GB.
+description: Every service with a minimal amount of content, for trying the kit end to end. About 2 GB.
 budget_bytes: 4000000000
 packages:
   - archwiki_en
@@ -9,7 +9,5 @@ packages:
   - audiobookshelf
   - jellyfin
   - kavita
-  - luanti
-  - gnome_mines
   - map_berlin
   - llm_auto
