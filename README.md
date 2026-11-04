@@ -2,7 +2,7 @@
 
 Package manifests and profiles for [`kit`](../kit). Add it with:
 
-    kit catalog add main https://github.com/TetrisIQ/katalog/releases/latest/download/catalog.tar.gz
+    kit catalog add main https://github.com/TetrisIQ/blackout-tool-catalog/releases/latest/download/catalog.tar.gz
 
 ## Layout
 - `<category>/<id>.yaml`: one manifest per package, file name = id, unknown keys rejected.
