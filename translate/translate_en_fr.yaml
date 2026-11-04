@@ -1,0 +1,12 @@
+id: translate_en_fr
+name: Page translation English to French
+description: Offline translation of articles from English to French in the portal (Translate button next to the search). Mozilla's Bergamot models run in the browser; size and checksums are read live.
+category: translation
+type: translation
+source:
+  translation: {from: en, to: fr}
+license:
+  spdx: MPL-2.0
+  url: https://github.com/mozilla/firefox-translations-models
+  attribution: Mozilla, Bergamot project
+languages: [en, fr]

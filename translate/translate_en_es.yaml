@@ -1,0 +1,12 @@
+id: translate_en_es
+name: Page translation English to Spanish
+description: Offline translation of articles from English to Spanish in the portal (Translate button next to the search). Mozilla's Bergamot models run in the browser; size and checksums are read live.
+category: translation
+type: translation
+source:
+  translation: {from: en, to: es}
+license:
+  spdx: MPL-2.0
+  url: https://github.com/mozilla/firefox-translations-models
+  attribution: Mozilla, Bergamot project
+languages: [en, es]
