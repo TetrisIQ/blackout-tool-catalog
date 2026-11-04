@@ -1,0 +1,12 @@
+id: maps_en_netherlands
+name: Map of Netherlands
+description: "Street map of the Netherlands from OpenStreetMap as vector tiles (roads, paths, buildings, places and points of interest such as drinking water, shelters, hospitals) with the Kiwix map viewer data. Zoom 0-14."
+category: maps
+type: zim
+source:
+  kiwix: {name: maps_en_netherlands}
+license:
+  spdx: ODbL-1.0
+  url: https://www.openstreetmap.org/copyright
+  attribution: OpenStreetMap contributors; OpenFreeMap; OpenMapTiles
+languages: [en]

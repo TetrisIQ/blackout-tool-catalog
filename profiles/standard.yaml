@@ -21,7 +21,7 @@ packages:
   - devdocs_css
   - devdocs_javascript
   - devdocs_c
-  - map_germany
+  - maps_en_germany
   - llm_auto
   - wikimed_en_nopic
   - readygov_en
