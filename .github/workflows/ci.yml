@@ -17,4 +17,8 @@ jobs:
         with:
           workspaces: kit
       - run: cargo build --release --locked --manifest-path kit/Cargo.toml
-      - run: kit/target/release/kit catalog check .
+      # the kit checkout sits inside the workspace; remove it so only the catalog is checked
+      - run: |
+          mv kit/target/release/kit "$RUNNER_TEMP/kit"
+          rm -rf kit
+          "$RUNNER_TEMP/kit" catalog check .
