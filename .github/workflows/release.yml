@@ -13,7 +13,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Pack
         run: |
-          tar czf catalog.tar.gz --exclude=.git --exclude=.github --transform 's,^\./,,' .
+          out="$RUNNER_TEMP/catalog.tar.gz"
+          tar czf "$out" --exclude=.git --exclude=.github --transform 's,^\./,,' .
+          mv "$out" catalog.tar.gz
           sha256sum catalog.tar.gz | cut -d' ' -f1 > catalog.tar.gz.sha256
       - uses: softprops/action-gh-release@v2
         with:

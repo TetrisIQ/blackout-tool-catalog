@@ -12,6 +12,8 @@ jobs:
         with:
           repository: TetrisIQ/blackout-tool
           path: kit
+          # the kit repository is private: add a read-only token as secret KIT_READ_TOKEN
+          token: ${{ secrets.KIT_READ_TOKEN }}
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
         with:
